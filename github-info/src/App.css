@@ -1,9 +1,9 @@
 .App {
   text-align: center;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJfOOzQWkMtBSnU0pB0qolQn4iCiz1ZYTSKp2qCKEQj85_ZImM");
-  background-size:50%;
-  background-position: center;
-  background-attachment: fixed;
+  background-image: url("https://pngimg.com/uploads/github/github_PNG20.png");
+  background-size:auto;
+  background-position: top;
+  
 
   background-repeat: no-repeat;
   
@@ -17,5 +17,13 @@ input{
   margin-bottom: 2%;
 }
 
+.calendar{
+  background-color:orange;
+}
+h1{
+  color:orange;
+  text-shadow: 1px 1px black;
+  font-size:3rem;
+}
 
 
