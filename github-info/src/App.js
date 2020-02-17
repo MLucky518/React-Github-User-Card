@@ -8,7 +8,8 @@ class App extends Component {
     super();
     this.state = {
       user: {},
-      followers: []
+      followers: [],
+      userText: "MLucky518"
     };
   }
 
@@ -33,9 +34,10 @@ class App extends Component {
     this.fetchUserData();
     this.fetchFollowerData();
   }
+ 
 
   fetchFollowerData = () => {
-    fetch("https://api.github.com/users/MLucky518/followers")
+    fetch(`https://api.github.com/users/${this.state.userText}/followers`)
       .then(res => {
         return res.json();
       })
@@ -50,14 +52,45 @@ class App extends Component {
       });
   };
 
+  fetchUser = e =>{
+    e.preventDefault();
+
+    fetch(`https://api.github.com/users/${this.state.userText}`)
+      .then(res => {
+        return res.json();
+      })
+
+      .then(info => {
+        console.log(info);
+        this.setState({ user: info });
+      })
+
+      .catch(err => {
+        console.log("no info", err);
+      });
+  }
+  handleChange = e => {
+    this.setState({ userText: e.target.value });
+   
+  };
+
   render() {
     console.log("render");
     return (
       <div className="App">
         <h1>Select a user</h1>
+        <input    
+        type = "text"
+        value = {this.state.userText}
+        onChange = {this.handleChange}
+        />
+        <button onClick = {this.fetchUser} onClick = {this.fetchFollowerData} >Switch User</button>
+        <button onClick = {this.fetchFollowerData} >Switch Followers </button>
+        
         <UserCard user={this.state.user} />
         <FollowerList followers = {this.state.followers}/>
       </div>
+      
     );
   }
 }
