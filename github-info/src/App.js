@@ -84,11 +84,11 @@ class App extends Component {
         value = {this.state.userText}
         onChange = {this.handleChange}
         />
-        <button onClick = {this.fetchUser} onClick = {this.fetchFollowerData} >Switch User</button>
+        <button onClick = {this.fetchUser} >Switch User</button>
         <button onClick = {this.fetchFollowerData} >Switch Followers </button>
         
         <UserCard user={this.state.user} />
-        <FollowerList followers = {this.state.followers}/>
+        <FollowerList user = {this.state.user.login}followers = {this.state.followers}/>
       </div>
       
     );

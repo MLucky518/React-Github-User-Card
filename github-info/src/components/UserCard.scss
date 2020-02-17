@@ -1,9 +1,14 @@
-.user-card-container{
+.user-card-container {
+  li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+  }
 
-
-    li{
-        font-size:1.5rem;
-        font-weight:bold;
-        color:black;
+  button {
+    border: 3px solid black;
+    &:hover {
+      transform: scale3d(1.1, 1.1, 1);
     }
+  }
 }
