@@ -36,6 +36,7 @@ class App extends Component {
     this.fetchFollowerData();
   }
 
+
   fetchFollowerData = () => {
     fetch(`https://api.github.com/users/${this.state.userText}/followers`)
       .then(res => {

@@ -1,11 +1,5 @@
 .App {
-  text-align: center;
-  background-image: url("https://pngimg.com/uploads/github/github_PNG20.png");
-  background-size:auto;
-  background-position: top;
-  
-
-  background-repeat: no-repeat;
+ 
   
   height:100%;
 }
@@ -15,14 +9,21 @@ ul {
 
 input{
   margin-bottom: 2%;
+  border:2px solid orange;
+  font-size:1.2rem;
+  margin-right: 0.5%;
 }
-
+button{
+  border: 2px solid orange;
+  
+ 
+}
 .calendar{
   background-color:orange;
 }
 h1{
   color:orange;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px black;
   font-size:3rem;
 }
 
