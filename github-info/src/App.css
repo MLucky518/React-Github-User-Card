@@ -1,0 +1,30 @@
+.App {
+ 
+  
+  height:100%;
+}
+ul {
+  list-style-type: none;
+}
+
+input{
+  margin-bottom: 2%;
+  border:2px solid orange;
+  font-size:1.2rem;
+  margin-right: 0.5%;
+}
+button{
+  border: 2px solid orange;
+  
+ 
+}
+.calendar{
+  background-color:orange;
+}
+h1{
+  color:orange;
+  text-shadow: 2px 2px black;
+  font-size:3rem;
+}
+
+

@@ -1,0 +1,21 @@
+.user-card-container {
+    color:orange;
+    text-shadow: 1px 1px black;
+    .user-pic{
+        border-radius: 10%;
+        height:300px;
+        width:300px;
+    }
+  li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+  }
+
+  button {
+    border: 3px solid black;
+    &:hover {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+}

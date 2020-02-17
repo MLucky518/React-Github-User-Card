@@ -1,0 +1,17 @@
+.follower-card {
+  color: orange;
+  text-shadow: 2px 2px black;
+  margin: 2%;
+  transition: border-radius ease 1s;
+  &:hover {
+    transform: scale3d(1.1, 1.1, 1);
+    img{
+    border-radius: 100%;
+    }
+  }
+
+  .follower-pics {
+    width: 300px;
+    height: 300px;
+  }
+}
